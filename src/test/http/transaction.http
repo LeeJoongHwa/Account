@@ -1,0 +1,31 @@
+### use balance
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000000",
+  "amount": 100
+}
+
+### use balance2
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000002",
+  "amount": 10000
+}
+
+### cancel balance
+POST http://localhost:8080/transaction/cancel
+Content-Type: application/json
+
+{
+  "transactionId": "8a1f48ee2a124012bbc2ead05b3e9885",
+  "accountNumber": "1000000000",
+  "amount": 100
+}
+### query transaction
+GET http://localhost:8080/transaction/무작위로 나오는 id 입력
